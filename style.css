@@ -6,14 +6,6 @@ body {
     font-size: 16px; /* Base font size for percentage calculations */
     background: linear-gradient(to right, #e0f2f7, #a8d5e3); /* Dégradé de gauche à droite */
 }
-/*
-header {
-    background-color: rgb(34, 66, 124, 0.5);
-    padding: 2%; 
-    text-align: center;
-    border-radius: 1%; 
-}*/
-
 header {
     background: linear-gradient(135deg, rgba(34, 66, 124, 0.8), rgba(50, 90, 150, 0.6));
     padding: 2%;
