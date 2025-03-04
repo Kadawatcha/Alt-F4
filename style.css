@@ -1,0 +1,64 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+header /* Titre de la page en quelque srte */
+{
+    background-color: rgb(34,66,124,0.5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+#Add {
+    position:absolute;
+    top: 40%;
+    right: 20%;
+    margin: 2%;
+}
+
+
+
+
+.bouton-image-texte {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(114, 193, 239);
+    color: rgb(0, 0, 0);
+    transition: transform 0.5s ease; /* Ajoute une transition pour le grossissement */
+  }
+  
+  .bouton-image-texte:hover {
+    background-color: #1e4755;
+    transform: scale(1.05); /* Grossit le bouton de 5 % au survol */
+  }
+
+
+
+
+  
+  /*br {
+      margin-bottom: 15px;
+  }*/
+
+/* Bas de page cnditions utilisation / droits réservés */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #cbc9c9;
+    padding: 10px;
+    text-align: center;
+}
