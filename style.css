@@ -3,21 +3,45 @@ body {
     margin: 0;
     padding: 0;
     color: black;
-    font-size: 16px; /* Base font size for percentage calculations */
-    background: linear-gradient(to right, #e0f2f7, #a8d5e3); /* Dégradé de gauche à droite */
+    font-size: 16px; 
+    background: linear-gradient(to right, #e0f2f7, #a8d5e3); 
+    overflow-y: auto; /* Active le défilement vertical si nécessaire */
+    overflow-x: hidden; /* Désactive le défilement horizontal */
+    
 }
 header {
     background: linear-gradient(135deg, rgba(34, 66, 124, 0.8), rgba(50, 90, 150, 0.6));
-    padding: 2%;
-    text-align: center;
-    border-radius: 8px; /* Plus arrondi */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure subtile */
-}
-main {
-    padding: 4%; /* Percentage based padding */
+    padding: 0.5%;
+    text-align: left;
+    color: #F8F8F8;
+    border-radius: 2px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
 }
 
+header h1 a {
+    font-size: 0.4em; /* Ou une autre valeur plus petite */
+    text-decoration: none;
+    color: black;
+
+
+}
+
+h1 span {           /* distance texte / ancres */
+    margin-right: 50%; 
+}
+
+
+main {
+    padding: 4%; 
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Position des boutons et sections */
 #Add {
     position: absolute;
     top: 40%;
@@ -45,6 +69,7 @@ main {
     transform: scale(1.03); /* Réduction de l'effet d'agrandissement */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
 }
+
 footer {
     position: fixed;
     bottom: 0;
@@ -54,3 +79,35 @@ footer {
     text-align: center;
     font-size: 80%;
 }
+
+
+/* Style de la barre de défilement entière */
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre */
+  }
+  
+  /* Style du "pouce" (la partie mobile) */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Couleur du pouce */
+    border-radius: 6px; /* Bords arrondis */
+  }
+  
+  /* Style du "pouce" au survol */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Style de la "piste" (l'arrière-plan) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Couleur de la piste */
+  }
+  
+  /* Style de la "piste" ombrée */
+  ::-webkit-scrollbar-track-piece {
+    background: #f1f1f1;
+  }
+  
+  /* Style de la poignée de redimensionnement (si applicable) */
+  ::-webkit-scrollbar-corner {
+    background: #ccc;
+  }
