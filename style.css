@@ -4,61 +4,53 @@ body {
     padding: 0;
     background-color: white;
     color: black;
+    font-size: 16px; /* Base font size for percentage calculations */
 }
 
-header /* Titre de la page en quelque srte */
-{
-    background-color: rgb(34,66,124,0.5);
-    padding: 20px;
+header {
+    background-color: rgb(34, 66, 124, 0.5);
+    padding: 2%; /* Percentage based padding */
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1%; /* Percentage based border radius */
 }
 
 main {
-    padding: 20px;
+    padding: 4%; /* Percentage based padding */
 }
 
 #Add {
-    position:absolute;
+    position: absolute;
     top: 40%;
-    right: 20%;
+    right: 2%; /* Reduced right margin */
     margin: 2%;
+    width: 20%; /* Added a width, it can be improved */
+    max-width: 200px; /* Added a max width so that the button isn't too wide */
 }
-
-
-
 
 .bouton-image-texte {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 2% 4%; /* Percentage based padding (top/bottom, left/right) */
     border: none;
-    border-radius: 8px;
+    border-radius: 2%; /* Percentage based border radius */
     cursor: pointer;
     background-color: rgb(114, 193, 239);
     color: rgb(0, 0, 0);
-    transition: transform 0.5s ease; /* Ajoute une transition pour le grossissement */
-  }
-  
-  .bouton-image-texte:hover {
+    transition: transform 0.5s ease;
+    font-size: 100%;/* Percentage based font size (relative to body font size)*/
+}
+
+.bouton-image-texte:hover {
     background-color: #1e4755;
-    transform: scale(1.05); /* Grossit le bouton de 5 % au survol */
-  }
+    transform: scale(1.05);
+}
 
-
-
-
-  
-  /*br {
-      margin-bottom: 15px;
-  }*/
-
-/* Bas de page cnditions utilisation / droits réservés */
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #cbc9c9;
-    padding: 10px;
+    padding: 1%; /* Percentage based padding */
     text-align: center;
+    font-size: 80%; /* Make the footer text slightly smaller */
 }
