@@ -1,78 +1,149 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-size: 16px; 
-    background: linear-gradient(to right, #e0f2f7, #a8d5e3); 
-    overflow-y: auto; /* Active le défilement vertical si nécessaire */
-    overflow-x: hidden; /* Désactive le défilement horizontal */
-    
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  background: linear-gradient(to right, #e0f2f7, #a8d5e3);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
 header {
-    background: linear-gradient(135deg, rgba(34, 66, 124, 0.8), rgba(50, 90, 150, 0.6));
-    padding: 0.5%;
-    text-align: left;
-    color: #F8F8F8;
-    border-radius: 2px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    
+  background: linear-gradient(135deg, rgba(34, 66, 124, 0.8), rgba(50, 90, 150, 0.6));
+  padding: 1% 2%;
+  text-align: left;
+  color: #F8F8F8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em; /* Ajustez la taille selon vos préférences */
 }
 
-header h1 a {
-    font-size: 0.4em; /* Ou une autre valeur plus petite */
-    text-decoration: none;
-    color: black;
-
-
+header nav a {
+  color: #F8F8F8;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 0.5em; /* Ajustez la taille selon vos préférences */
+  text-align: right;
 }
-
-h1 span {           /* distance texte / ancres */
-    margin-right: 50%; 
-}
-
 
 main {
-    padding: 4%; 
+  padding: 20px;
 }
-/*--------------------------------------------------------------------------------------------------------------------*/
 
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-
-
-/* Position des boutons et sections */
 #Add {
-    position: absolute;
-    top: 40%;
-    right: 2%;
-    margin: 2%;
-    width: 20%;
-    max-width: 200px; 
+  text-align: center;
+  margin-top: 20px;
 }
+
 .bouton-image-texte {
-    display: inline-flex;
-    align-items: center;
-    padding: 2% 4%;
-    border: none;
-    border-radius: 8px; /* Plus arrondi */
-    cursor: pointer;
-    background: linear-gradient(135deg, rgb(114, 193, 239), rgb(80, 160, 220)); /* Dégradé */
-    color: white; /* Texte blanc pour contraste */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition plus douce */
-    font-size: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, rgb(114, 193, 239), rgb(80, 160, 220));
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 5px;
 }
 
 .bouton-image-texte:hover {
-    background: linear-gradient(135deg, #1e4755, #2c6a85); /* Dégradé plus foncé au survol */
-    transform: scale(1.03); /* Réduction de l'effet d'agrandissement */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+  background: linear-gradient(135deg, #1e4755, #2c6a85);
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 footer {
   width: 100%;
   background-color: #cbc9c9;
-  padding: 1%;
+  padding: 10px;
   text-align: center;
-  font-size: 80%;
+}
+
+
+#remonter {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f8f8f8; /* Couleur de fond */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  opacity: 0; /* Cache le bouton initialement */
+  transition: opacity 0.3s ease-in-out; /* Animation pour l'apparition */
+}
+
+#remonter.show {
+  opacity: 1; /* Affiche le bouton */
+}
+
+
+
+
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pousse les boutons à droite */
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  
+
+
+}
+
+.header-button .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.add-bot {
+  background-color: #5865F2; /* Couleur Discord */
+}
+
+.support-server {
+  background-color: #23A55A; /* Couleur verte moderne */
+}
+
+.header-button:hover {
+  opacity: 0.8;
 }

@@ -4,72 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="alt_f4.jpg">
-    <title>ALt F4 - Discord bot</title>
+    <title>Alt F4 - Bot Discord</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<button id="remonter" title="Remonter en haut de la page">&#x21E7;</button>
 <body>
     <header>
         <h1>
-            <span>Alt F4</span>
-            <a href="#fonctionnalites">Fonctionnalités  &#x23F7; </a> &nbsp;
-            <a href="#equipe">l'équipe &#x23F7;</a> &nbsp;
-            <a href="#Leplus">Le plus &#x23F7;</a>
+            Alt F4
+
+            <nav>
+                <a href="#fonctionnalites">Fonctionnalités &#x23F7;</a>
+                <a href="#equipe">L'équipe &#x23F7;</a>
+                <a href="#Leplus">Le plus &#x23F7;</a>
+                <a href="#Add">Liens utiles &#x23F7;</a>
+            </nav>
+            <div class="header-buttons">
+                <button class="header-button add-bot" onclick="window.open('https:/discord.com/oauth2/authorize?client_id=1326592347852640390', '_blank');">
+                    <img src="bot.png" alt="logo bot" class="icon" />
+                    Ajouter Alt F4
+                </button>
+                <button class="header-button support-server" onclick="window.open('https:/discord.gg/pkaWvSxBRF', '_blank');">
+                    <img src="discord.png" alt="Logo discord" class="icon" />
+                    Serveur support
+                </button>
+            </div>
         </h1>
-        
     </header>
     <main>
-
         <section id="fonctionnalites">
             <h2>Fonctionnalités</h2>
-            <p>Ce que vous propose ALt F4 <br>
-            - Des commandes de modération <br>
-            - Des commandes pour le fun<br>
-            - Des petits jeux interactifs <br>
-            - Des commandes utilitaires <br>
-            - Bien plus encore ! Retrouvez toutes ces fonctionalités dans le suport <br>
-             </p>
+            <p>Découvrez tout ce que Alt F4 a à offrir pour améliorer votre serveur Discord :</p>
+            <ul>
+                <li>Commandes de modération efficaces pour gérer votre communauté.</li>
+                <li>Commandes ludiques pour ajouter du fun et de l'interaction.</li>
+                <li>Jeux interactifs pour divertir vos membres.</li>
+                <li>Outils utilitaires pour faciliter la gestion de votre serveur.</li>
+                <li>Et bien plus encore ! Consultez notre serveur support pour une liste complète.</li>
+            </ul>
         </section>
-       
         <section id="equipe">
             <h2>L'équipe</h2>
-            <p>@kadawatcha et quelques developpeurs aidant</p>
+            <p>Alt F4 est développé par @kadawatcha, avec l'aide précieuse de plusieurs développeurs passionnés.</p>
         </section>
-
         <section id="Leplus">
             <h2>Le petit plus pour vos serveurs</h2>
-            <p> 
-                Nous vous proposons ce que peu d'autres bots vous proposent : <br>
-                Vous pouvez beneficier du compteur et des commandes dérivés de Alt F4 dans vos serveurs sans perdre votre suite actuelle !<br><br>
-                Etapes à suivre :
-                <ul> Ajoutez ALt F4</ul>
-                <ul> Configurez le compteur avec la commande /counter </ul>
-                <ul> Rejoignez le <a href="https://discord.gg/pkaWvSxBRF" >serveur support</a> </ul>
-                <ul> Ouvrez un ticket, informez notre staff du nombre actuel ( hors 0 envoyé précédament par Alt F4) </ul>
-                <ul> Donnez nous l'id du serveur ( voir <a href="https://discord.com/developers/docs/activities/building-an-activity"> Etape 0 : Activer le mode developpeur</a> )</ul>
-                <ul> Attendez quelques minutes / heures et c'est parti vous pouvez compter !</ul>
-                <br>
-                Désormais vous etes dans le /top-counter vous pouvez voir votre classement parmis les autres serveurs<br>
-
-            </p>
-
+            <p>Nous offrons une fonctionnalité unique : l'intégration du compteur Alt F4 sans perte de votre progression actuelle !</p>
+            <p>Voici comment procéder :</p>
+            <ol>
+                <li>Ajoutez Alt F4 à votre serveur.</li>
+                <li>Configurez le compteur avec la commande /counter.</li>
+                <li>Rejoignez notre <a href="https://discord.gg/pkaWvSxBRF">serveur support</a></li>
+                <li>Ouvrez un ticket et informez notre équipe du nombre actuel.</li>
+                <li>Fournissez l'ID de votre serveur (activez le mode développeur dans Discord).</li>
+                <li>Attendez quelques instants, et c'est parti !</li>
+            </ol>
+            <p>Rejoignez le /top-counter et comparez votre classement avec d'autres serveurs.</p>
         </section>
-
-
         <section id="Add">
             <button class="bouton-image-texte" onclick="window.open('https:/discord.com/oauth2/authorize?client_id=1326592347852640390', '_blank');">
-                <img src="bot.png" alt="logo bot" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px;" />
+                <img src="bot.png" alt="logo bot" class="icon" />
                 Ajouter Alt F4
             </button>
-            <br>
-            <br>
             <button class="bouton-image-texte" onclick="window.open('https:/discord.gg/pkaWvSxBRF', '_blank');">
-                <img src="discord.png" alt="Logo discord" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 10px;" />
+                <img src="discord.png" alt="Logo discord" class="icon" />
                 Serveur support
             </button>
         </section>
     </main>
     <footer>
-        Alt F4 &copy; - <span id="currentYear"></span> - touts droits réservés
+        Alt F4 &copy; - <span id="currentYear"></span> - Tous droits réservés -
         <a href="https://docs.google.com/document/d/1A-MNpvNMyrKProi6oLZxC_hqgLm5Z6eN6LkQoly9SSM/edit?usp=sharing">Conditions d'utilisation</a> -
         <a href="https://docs.google.com/document/d/1A-MNpvNMyrKProi6oLZxC_hqgLm5Z6eN6LkQoly9SSM/edit?usp=sharing">Politique de confidentialité</a>
     </footer>
