@@ -69,45 +69,10 @@ main {
     transform: scale(1.03); /* Réduction de l'effet d'agrandissement */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
 }
-
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #cbc9c9;
-    padding: 1%;
-    text-align: center;
-    font-size: 80%;
+  width: 100%;
+  background-color: #cbc9c9;
+  padding: 1%;
+  text-align: center;
+  font-size: 80%;
 }
-
-
-/* Style de la barre de défilement entière */
-::-webkit-scrollbar {
-    width: 12px; /* Largeur de la barre */
-  }
-  
-  /* Style du "pouce" (la partie mobile) */
-  ::-webkit-scrollbar-thumb {
-    background: #888; /* Couleur du pouce */
-    border-radius: 6px; /* Bords arrondis */
-  }
-  
-  /* Style du "pouce" au survol */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  
-  /* Style de la "piste" (l'arrière-plan) */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Couleur de la piste */
-  }
-  
-  /* Style de la "piste" ombrée */
-  ::-webkit-scrollbar-track-piece {
-    background: #f1f1f1;
-  }
-  
-  /* Style de la poignée de redimensionnement (si applicable) */
-  ::-webkit-scrollbar-corner {
-    background: #ccc;
-  }
